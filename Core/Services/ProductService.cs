@@ -7,10 +7,10 @@ namespace venar_bus_api_jakar_bckd_net.Core.Services
 {
     public class ProductService : IProductService
     {
-        private readonly IRepository<Product> _productRepository;
-        private readonly IRepository<Category> _categoryRepository;
+        private readonly IMongoRepository<Product> _productRepository;
+        private readonly IMongoRepository<Category> _categoryRepository;
 
-        public ProductService(IRepository<Product> productRepository, IRepository<Category> categoryRepository)
+        public ProductService(IMongoRepository<Product> productRepository, IMongoRepository<Category> categoryRepository)
         {
             _productRepository = productRepository;
             _categoryRepository = categoryRepository;
@@ -21,15 +21,15 @@ namespace venar_bus_api_jakar_bckd_net.Core.Services
             return await _productRepository.GetAllAsync();
         }
 
-        public async Task<Product?> GetProductByIdAsync(int id)
+        public async Task<Product?> GetProductByIdAsync(string id)
         {
             return await _productRepository.GetByIdAsync(id);
         }
 
-        public async Task<IEnumerable<Product>> GetProductsByCategoryAsync(int categoryId)
-        {
-            return await _productRepository.FindAsync(p => p.CategoryId == categoryId);
-        }
+        // public async Task<IEnumerable<Product>> GetProductsByCategoryAsync(string categoryId)
+        // {
+        //     return await _productRepository.FindAsync(p => p.CategoryId == categoryId);
+        // }
 
         public async Task<Product> CreateProductAsync(CreateProductDto productDto)
         {
@@ -95,7 +95,7 @@ namespace venar_bus_api_jakar_bckd_net.Core.Services
             await _productRepository.UpdateAsync(product);
         }
 
-        public async Task DeleteProductAsync(int id)
+        public async Task DeleteProductAsync(string id)
         {
             await _productRepository.DeleteAsync(id);
         }
