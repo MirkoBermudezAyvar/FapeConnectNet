@@ -1,0 +1,6 @@
+@venar_bus_api_jakar_bckd_net_HostAddress = http://localhost:5298
+
+GET {{venar_bus_api_jakar_bckd_net_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

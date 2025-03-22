@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "venar-bus-api-jakar-bckd-net", "venar-bus-api-jakar-bckd-net.csproj", "{BE26BC56-5D6A-49A2-A27C-78B095461EA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE26BC56-5D6A-49A2-A27C-78B095461EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE26BC56-5D6A-49A2-A27C-78B095461EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE26BC56-5D6A-49A2-A27C-78B095461EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE26BC56-5D6A-49A2-A27C-78B095461EA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4FCD03A0-96DC-4ABB-880A-5B73250EF4FA}
+	EndGlobalSection
+EndGlobal
